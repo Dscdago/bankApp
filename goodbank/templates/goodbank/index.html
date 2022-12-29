@@ -1,0 +1,87 @@
+{% extends 'goodbank/layout.html' %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <h1>Welcome to GoodBank!</h1>
+            <p>We're more than just any other bank, we're family helping families!</p>
+            <p>We are glad you are here. At GoodBank, we pride ourselves on offering top-quality financial services to our customers. Whether you are looking for a checking account, a credit card, a loan, or investment opportunities, we have something for everyone. Our team of dedicated professionals is here to help you achieve your financial goals. Thank you for choosing GoodBank. We look forward to serving you.</p>
+        </div>
+        <div class="col-6 text-center">
+            <img id="homeImage" src="https://img.freepik.com/premium-vector/cartoon-retro-bank-building-courthouse-with-columns-illustration-isolated-white_53562-8133.jpg?w=2000">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <h1>Our Services</h1>
+            <div class="accordion accordion-flush" id="accordionFlushServices">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed"  type="button" data-bs-toggle="collapse" data-bs-target="#flush-checking" aria-expanded="false" aria-controls="flush-checking">
+                            Checking Accounts
+                        </button>
+                    </h2>
+                    <div id="flush-checking" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushServices">
+                        <div class="according-body" style="padding: 5px">{Bank name's} checking accounts offer a variety of benefits including no monthly fees, free online and mobile banking, a free debit card, overdraft protection, and competitive interest rates. They are a convenient and cost-effective way to manage your money.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-savings" aria-expanded="false" aria-controls="flush-savings">
+                            Savings Accounts
+                        </button>
+                    </h2>
+                    <div id="flush-savings" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushServices">
+                        <div class="according-body" style="padding: 5px">{Bank name's} savings accounts offer competitive interest rates, no minimum balance requirements, easy access to your money, FDIC insurance, and convenient account management. They are a simple and effective way to grow your savings.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-credit" aria-expanded="false" aria-controls="flush-credit">
+                            Credit Accounts
+                        </button>
+                    </h2>
+                    <div id="flush-credit" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushServices">
+                        <div class="according-body" style="padding: 5px">{Bank name's} credit accounts offer competitive interest rates, flexible payment options, rewards programs, fraud protection, and customer service. They are a convenient and cost-effective way to borrow money and make purchases.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <h1>About Us</h1>
+            <div class="row">
+                <div class="col">
+                    <h6>Hours:</h6>
+                    <ul class="list-group">
+                        <li class="list-group-item">Monday: 10am - 5pm</li>
+                        <li class="list-group-item">Tuesday: 10am - 5pm</li>
+                        <li class="list-group-item">Wednesday: 10am - 5pm</li>
+                        <li class="list-group-item">Thursday: 10am - 5pm</li>
+                        <li class="list-group-item">Friday: 10am - 5pm</li>
+                        <li class="list-group-item">Saturday: 10am - 3pm</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h6>Locations:</h6>
+                    <ul class="list-group">
+                        <li class="list-group-item">Oakdale, New York</li>
+                        <li class="list-group-item">Meadowbrook, Pennsylvania</li>
+                        <li class="list-group-item">Silverlake, New Jersey</li>
+                    </ul>
+                    <div style="margin-top:5px;">
+                        <h6>Call Us At:</h6>
+                        <ul class="list-group">
+                            <li class="list-group-item">1-800-555-5555</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+</div>
+{% endblock %}

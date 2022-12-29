@@ -1,0 +1,8 @@
+#homeImage {
+    width: 75%;
+    object-fit: contain;
+}
+
+p {
+    font-size: larger;
+}
